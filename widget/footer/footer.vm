@@ -1,0 +1,17 @@
+<!--footer结束-->
+<div class="footer">
+    <div class="row clearfix">
+        <div class="col-md-2 column">
+        </div>
+        <div class="col-md-8 column footer">
+             <p>    
+                <a href="index.html">网站首页</a><a href="product.html">产品信息</a><a href="ss_service.html">技术服务</a><a href="case.html">成功案例</a>
+                <a href="news.html">新闻资讯</a><a href="about.html">关于绿云</a><a href="job.html">诚聘英才</a><a href="contact.html">联系我们</a>
+            </p>
+             <p>HangZhou GreenCloud S&T Corp.,LTD.版权所有</p>
+        </div>
+        <div class="col-md-2 column">
+        </div>
+    </div>
+</div>
+<!--footer结束-->

@@ -1,0 +1,31 @@
+/*base top*/
+@import '/static/css/config.less';
+.logo{background: @other_bg;height: 100px;}
+.menu{
+	height: 44px;background:@nav_bg;color:@nav_color;
+	a{color:@nav_color;}
+	li{float: left;display: inline-block;}
+	.menul{width: 610px;float: left;height: 42px;overflow: hidden;
+		li{
+			padding-right:20px;
+			a{display: block;padding: 12px 20px;border-top: none;}
+			:hover{.border();border-top: none;}
+		}
+	}
+	.menur{float: right;padding:12px 0 0 0;
+		  li{
+		  	padding-right: 10px;
+			span{padding-left: 10px;}
+
+		  }
+		  .my_down{margin-left: 5px;padding-right: 12px;width: 80px;position: relative;z-index:5;_left: 60px;
+			.my_down_a{background:url(../images/my_down.png) no-repeat right center;padding: 13px 20px 15px 0;}
+			.my_menu_down{.border();display: none;height: 92px;width: 80px;position: absolute;top: 30px;left: -5px;z-index: 4;
+				li{float: left;width: 80px;height: 20px;background: @body_bg;padding:5px 0;border-bottom: 1px solid #ccc;margin: 0;
+					a{color:@link_color;display: block;text-align: center; }
+				}
+			}
+		  }
+	}
+
+}

@@ -1,0 +1,24 @@
+<!--登录框组件-->
+<form id="login" title="会员登录" >
+   <input type="hidden" id="verifyType" name="verifyType" value="useVerify"/>
+    <p>
+        <label for="loginId">账&nbsp;&nbsp;&nbsp;号：</label>
+        <input type="text" name="loginId" class="text" id="loginId" value="手机号/邮箱/会员卡号"  onblur="if(this.value=='')value='手机号/邮箱/会员卡号'" onfocus="if(this.value=='手机号/邮箱/会员卡号')this.value=''"/>
+        <span class="star">*</span>
+    </p>
+    <p>
+        <label for="loginPassword">密&nbsp;&nbsp;&nbsp;码：</label>
+        <input type="password" name="loginPassword" class="text" id="loginPassword" />
+        <span class="star">*</span>
+    </p>
+    
+    <p>
+        <label for="verifyCode">验证码：</label>
+        <input type="text" name="verifyCode"  class="text coin" id="login_coin" /><img class="yzm_img" src="http://www.9djd.cn/verifyCode.htm?t=1" />
+    </p>
+    
+    <ol class="login_error"></ol>
+    <ol class="request"></ol>
+    <span onclick="window.location.href='/forget_password.htm'" class="foget_password">忘记密码</span>
+</form>
+

@@ -1,0 +1,12 @@
+#require("static/css/jquery-ui.min.css")
+<div class="into">
+	<i>＊入住日期</i>
+	<input id="CheckInDate" readonly="readonly"  type="text" />
+</div>
+<div class="out">
+	<i>＊退房日期</i>
+	<input id="CheckOutDate" readonly="readonly"  type="text"/>
+</div>
+#script()
+	require(['InOutDate'])
+#end

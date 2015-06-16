@@ -1,0 +1,13 @@
+#macro( renderMenus $news)
+  <ul class="menul">
+    #foreach( $new in $news )
+        <li>
+              <a href="$!{new.link}" style="color:red">$!{new.title}</a>
+              <p>$!{new.description}..<a href="$!{new.link}">[查看详情]</a></p>
+        </li>
+    #end
+  </ul>
+#end
+
+ #renderMenus($news)
+ 

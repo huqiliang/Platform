@@ -1,0 +1,85 @@
+{
+    "title": "页面",
+    "titleAffix": "页面副标题",
+    "pageTitle": "页面标题",
+    "member":{
+        "lastName":"李",
+        "sex":"男"
+    },
+    "menus": [
+        {
+            "name": "网站首页",
+            "link": "/"
+        },
+        {
+            "name": "产品信息",
+            "link": "/lvyun/product.html",
+            "children": [
+                {
+                    "name": "平台特点",
+                    "link": "/lvyun/product.html"
+                },
+
+                {
+                    "name": "产品",
+                    "link": "/lvyun/canpin.html"
+                },
+
+                {
+                    "name": "网站服务",
+                    "link": "/lvyun/product2.html"
+                },
+
+                {
+                    "name": "安全性",
+                    "link": "/lvyun/safe.html"
+                }
+            ]
+        },
+
+        {
+            "name": "技术服务",
+            "link": "/lvyun/jishu.html",
+            "children": [
+                {
+                    "name": "实施服务",
+                    "link": "/lvyun/jishu.html"
+                },
+
+                {
+                    "name": "售后服务",
+                    "link": "/lvyun/shouhou.html"
+                },
+
+                {
+                    "name": "软件下载",
+                    "link": "/lvyun/ruanjian.html"
+                }
+            ]
+        },
+
+        {
+            "name": "成功案例",
+            "link": "/lvyun/anli.html"
+        },
+
+        {
+            "name": "新闻资讯",
+            "link": "/lvyun/xwzx.html"
+        },
+
+        {
+            "name": "关于绿云",
+            "link": "/lvyun/gyly.html"
+        },
+
+        {
+            "name": "诚聘英才",
+            "link": "/lvyun/cpyc.html"
+        }
+        {
+            "name": "联系我们",
+            "link": "/lvyun/lxwm.html"
+        }
+    ]
+}

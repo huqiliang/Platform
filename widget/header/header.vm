@@ -1,0 +1,38 @@
+#macro( renderMenus $menus)
+  <ul class="menul">
+    #foreach( $menu in $menus )
+        <li #if( $menu.active )class="active"#end>
+              <a href="$!{request.contextPath}$!{menu.link}">$!{menu.name}</a>
+        </li>
+    #end
+  </ul>
+#end
+<div id="top">
+    <div class="logo"><div class="content"><img src="/static/images/top.jpg" alt="" /></div></div>
+    <div class="menu">
+        <div class="content">
+            #renderMenus($menus)
+            <ul class="menur clearfix">
+                <li><a class="login">登录</a></li>
+                <li><a class="regedit">注册</a></li>
+                #if(!$member)
+                  <li><a class="login">登录</a><span>|</span></li>
+                  <li><a class="regedit">注册</a></li>
+                #else
+                  <li>欢迎您&nbsp; ${member.lastName}</li><li>#if(${member.sex}=="男") 先生 #else 女士#end</li>
+                  <li><a href="/logOut.htm">注销</a></li>
+                  <li class="my_down"><a href="/member/profile.htm" class="my_down_a">我的九点</a>
+                      <ul class="my_menu_down">
+                          <li><a href="/member/profile.htm">个人中心</a></li>
+                          <li><a href="/member/profile.htm?=d1">我的订单</a></li>
+                          <li><a href="/member/profile.htm?=d2">账户管理</a></li>
+                      </ul>
+                  </li>
+                #end
+            </ul>
+        </div>
+    </div>
+</div>
+#script()
+  require(['./header'])
+#end

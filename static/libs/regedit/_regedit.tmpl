@@ -1,0 +1,50 @@
+<form id="regedit" title="会员注册">
+    <input type="hidden" name="idType" value="01"/>
+    <p>
+        <label for="username">宾客姓名：</label>
+        <input type="text" name="username" class="text" id="regedit_user" value="请填写您的真实姓名" value="请填写您的真实姓名"  onblur="if(this.value=='')value='请填写您的真实姓名'" onfocus="if(this.value=='请填写您的真实姓名')this.value=''"/>
+        <span class="star">*</span>
+    </p>
+    <p>
+        <label>宾客性别：</label>
+        <input type="radio" name="sex" value="1" id="male" checked="checked"><label for="male">男</label></input><input type="radio" name="sex" value="2" id="female"><label for="female">女</label></input>
+    </p>
+    <p>
+        <label for="user_pid">身份证号：</label>
+        <input type="text" name="idNo" class="text" id="regedit_person_id" />
+        <span class="star">*</span>
+    </p>
+    <p>
+        <label for="password">登录密码：</label>
+        <input type="password" name="password" class="text" id="regedit_pass" />
+        <span class="star">*</span>
+    </p>
+    <p>
+        <label for="vierfyPassword">确认密码：</label>
+        <input type="password" name="vierfyPassword" class="text" id="regedit_pass2" />
+        <span class="star">*</span>
+    </p>
+    <p>
+        <label for="mobile">手机号码：</label>
+        <input type="text" name="mobile" class="text" id="regedit_phone" />
+        <span class="star">*</span> 
+    </p>
+    <p style="padding-left: 75px;"><input type="button" id="send" value="免费获取短信动态码" style="border-radius: 3px;"/></p>
+    <p>
+        <label for="regedit_phonecode">动&nbsp;态&nbsp;码 ：</label>
+        <input type="text" name="phone_code" class="text" id="regedit_phonecode" title="12" />
+        <span class="star">*</span> 
+    </p>
+    <p>
+        <label for="email">邮&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;箱：</label>
+        <input type="text" name="email" class="text" id="email" style="margin-left:3px;"/>
+        <span class="star">*</span>
+    </p>
+    <p>
+        <label for="verifyCode">验&nbsp;证&nbsp;码 ：</label>
+        <input type="text" name="verifyCode"  class="text coin" id="regedit_coin" /><img class="yzm_img" src="http://www.9djd.cn/verifyCode.htm"/>
+    </p>
+    <p  class="no_button"><input type="checkbox" checked="checked" class="checkbox" name="accept" /><em>我已经阅读并同意<i onclick="window.location.href='/getGdPage.htm?secondCategory=FUWUTIAOKUAN'" style="cursor:pointer">《官网会员服务条款》</i></em><span class="star">*</span></p>
+    <ol class="reg_error"></ol>
+    <ol class="reg_request"></ol>
+</form>

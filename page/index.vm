@@ -1,0 +1,26 @@
+#extends("page/layout/front.vm")
+	#block("content")
+	<!--livereload-->
+	#widget("widget/IndexNews/IndexNews.vm")
+	 ##<div id="ele">注册<button id="form">模板数据</button><button id="form2">模板数据</button></div>
+	 ###widget("widget/banner/banner.vm")
+	 ## #script()
+	 ## 	require(['index'],function(app){
+	 ## 		app({
+	 ## 			vm:{
+	 ## 				btn:'#form',
+	 ## 				title:"提示1",
+	 ## 				content:"更新失败"
+	 ## 			},
+	 ## 			tw:{
+	 ## 				btn:'#form2',
+	 ## 				title:'提示2',
+	 ## 				content:'注册成功'
+	 ## 			}
+	 ## 		})
+	 ## 	})
+	 ## #end
+	#end 
+  	## 需要依赖一下自己，否则该 vm 中依赖没法自动加载进来。
+	#require("page/index.vm")
+#end

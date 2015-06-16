@@ -1,0 +1,39 @@
+﻿
+/*
+
+config.less v1.0.0 | (c) 2015, 2015 lvyun Foundation, Inc. | huqiliang
+
+*****less 配置文件*****
+*/
+@width:1100px;		  	//网页可视区域宽度
+@body_bg:#fff;     		//body背景颜色
+@link_color:#333;  		//链接颜色
+@font_color:#272727;  	//字体颜色
+@border_color:#333;		//边框颜色
+@other_bg:#170605;	    //其他统一背景
+@other_color:#fff;      //其他统一字体
+@btn_bg:#ddd;			//按钮背景
+@btn_color:#fff;		//按钮字体颜色
+@btn_hv_bg:#333;		//按钮划过背景
+@btn_hv_color:#fff;		//按钮划过字体
+
+//其他按组件
+
+//导航组件
+@nav_bg:#fff;	  	//导航条背景色
+@nav_color:#999;	  	//导航条字体颜色
+
+//less minxin
+
+//边框
+.border(@type:solid){					
+	border: 1px @type @border_color;
+}
+	
+//统一按钮调用									
+.btn(@btn_width:100px,@btn_height:29px){
+	width: @btn_width;display: block;background: @btn_bg;color:@btn_color;height:@btn_height;line-height:@btn_height;text-align: center;
+	:hover{
+		background: @btn_hv_bg;color: @btn_hv_color;
+	}
+}
