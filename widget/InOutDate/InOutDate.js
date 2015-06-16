@@ -1,6 +1,6 @@
-var $ = require('jquery')
-var datapicker=require('jquery-ui/i18n/datepicker-zh-TW')
-var addDate=require("libs/utils.adddate")
+var $ = require('jquery');
+var datapicker=require('jquery-ui/datepicker.js')
+var addDate=require("libs/utils/utils.adddate")
 /*获取当天日期*/
 var jtd = new Date();
 var monthw = jtd.getMonth()+1;

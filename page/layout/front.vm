@@ -1,4 +1,4 @@
-## 首页布局
+## 调用头部尾部布局
 #extends("./layout.vm")
     #block("body")
         #block("header")

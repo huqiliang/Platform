@@ -2,6 +2,7 @@
 	#block("content")
 	<!--livereload-->
 	#widget("widget/IndexNews/IndexNews.vm")
+	#widget("widget/InOutDate/InOutDate.vm")
 	 ##<div id="ele">注册<button id="form">模板数据</button><button id="form2">模板数据</button></div>
 	 ###widget("widget/banner/banner.vm")
 	 ## #script()

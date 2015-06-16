@@ -52,7 +52,7 @@ fis.config.set('pack', {
 
     // css
     'pkg/frame.css': ['page/layout/frame.vm'],   // 因为依赖会被打包，所以这个规则会把 frame.vm 依赖的 css 打包在一起。
-
+    
     // js
     // 依赖也会自动打包进来。
     'pkg/boot.js': ['static/js/require.js', 'components/jquery/jquery.js', 'components/bootstrap/js/bootstrap.js'],
