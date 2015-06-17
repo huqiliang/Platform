@@ -1,9 +1,0 @@
-{
-  "name": "auiDialog",
-  "description": "一个dialog组件",
-  "version":"1.0.0",
-  "protocol": "github",
-  "github": {
-    "author": "hql-components"
-  }
-}

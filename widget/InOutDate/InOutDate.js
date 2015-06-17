@@ -1,42 +1,41 @@
 var $ = require('jquery');
-var datapicker=require('jquery-ui/datepicker.js')
 var addDate=require("libs/utils/utils.adddate")
-/*获取当天日期*/
-var jtd = new Date();
-var monthw = jtd.getMonth()+1;
-var datew = jtd.getDate();
-if(monthw < 10){
-	var monthw = '0' + monthw;
-}
-if(datew < 10){var datew = '0' + datew}
-var jtstr = jtd.getFullYear()+"-"+ monthw +"-"+ datew;
-$("#CheckInDate").val(jtstr);
+var today=require("libs/utils/utils.today")
+require('laydate')                //日历插件
+
+var fday = today();
+var eday = addDate(fday,1);
+
+$("#CheckInDate").val(fday);
 
 /*获取明天日期*/
-$("#CheckOutDate").val(addDate(jtstr,1));
+$("#CheckOutDate").val(eday);
 
 //时间选择框声明
-var dates = $( "#CheckInDate, #CheckOutDate" ).datepicker({
-	minDate:0,
-	showButtonPanel: true,
-	dateFormat:"yy-mm-dd",
-	closeText:'x',
-	gotoCurrent:true,
-	showButtonPanel:false,
-	numberOfMonths: 1,
-	beforeShow:function(){
-		$(this).css("zIndex","9999999999");
-		$(".room_types_list li").css("zIndex","0");
-	},
-	onSelect: function( selectedDate ) {
-		var option = this.id == "CheckInDate" ? "minDate" : "maxDate",
-			instance = $( this ).data( "datepicker" ),
-			date = $.datepicker.parseDate(
-				instance.settings.dateFormat ||
-				$.datepicker._defaults.dateFormat,
-				selectedDate, instance.settings );
-			selectedDate=selectedDate.toString()
-		dates.not( this ).datepicker( "option", option, addDate(selectedDate,1) );
-		
-	}
-});	
+laydate({
+    elem: '#CheckInDate',
+    format: 'YYYY-MM-DD', // 分隔符可以任意定义，该例子表示只显示年月
+    min: fday, //最小日期
+    festival: true, //显示节日
+    choose: function(datas){ //选择日期完毕的回调
+      var edate=addDate(datas,1)
+      $("#CheckOutDate").val(edate);
+      laydate({
+	    elem: '#CheckOutDate',
+	    format: 'YYYY-MM-DD', // 分隔符可以任意定义，该例子表示只显示年月
+	    min: edate, //最小日期
+	    festival: true, //显示节日
+      });
+    }
+});
+
+laydate({
+    elem: '#CheckOutDate',
+    format: 'YYYY-MM-DD', // 分隔符可以任意定义，该例子表示只显示年月
+    min: fday, //最小日期
+    festival: true, //显示节日
+    choose: function(datas){ //选择日期完毕的回调
+       
+    }
+});
+

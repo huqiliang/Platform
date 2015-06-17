@@ -2,12 +2,22 @@
   <ul class="menul">
     #foreach( $new in $news )
         <li>
-              <a href="$!{new.link}" style="color:red">$!{new.title}</a>
-              <p>$!{new.description}..<a href="$!{new.link}">[查看详情]</a></p>
+              <a href="$!{new.link}" >$!{new.title}</a>
+              <span><a href="$!{new.link}">[查看详情]</a></span>
         </li>
     #end
   </ul>
 #end
+<div class="newsM clearfix">
+      <div class="newsMtitile"><a href="http://www.ruilizx.com/ruilixinwen/18871.html" target="_blank">绿云科技</a></div>
+      	 <h1><a href="http://www.ruilizx.com/ruilixinwen/18871.html" target="_blank"><img src="http://www.ruilizx.com/uploads/150608/1025-15060Q43136158.jpg" width="138" height="83"></a></h1>
+     	 <dl class="clearFix">
+         	<p>绿云科技详情绿云科技详情绿云科技详情绿云科技详情绿云科技详情绿云科技详情...<a href="http://www.ruilizx.com/ruilixinwen/18871.html" target="_blank">【详情点击】</a></p>
+         </dl>
 
- #renderMenus($news)
+      <ul>
+      		 #renderMenus($news)
+      </ul>
+</div>
+
  

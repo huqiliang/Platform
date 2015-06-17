@@ -1,4 +1,4 @@
-#require("static/css/jquery-ui.min.css")
+#require("static/css/jqurey-ui-css/jquery-ui.min.css")
 <div class="into">
 	<i>＊入住日期</i>
 	<input id="CheckInDate" readonly="readonly"  type="text" />

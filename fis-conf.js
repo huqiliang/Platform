@@ -13,11 +13,11 @@ fis.config.set('settings.postprocessor.amd', {
     paths: {
         'jquery': 'components/jquery/jquery.js',
         'bootstrap': 'components/bootstrap/js/bootstrap.js',
-        'jquery-ui': 'components/jquery-ui/ui/',
+        'jquery-ui': 'components/jquery-ui/',
         'jquery.validate': 'components/jquery-validation/jquery.validate.js',
         'default.validate': 'components/jquery-validation/validate_hql',
         'auiDialog':'components/auiDialog/dialog-min.js',
-        
+        'laydate':'components/laydate/laydate.js'
     },
     packages: [
 
@@ -56,7 +56,11 @@ fis.config.set('pack', {
     // js
     // 依赖也会自动打包进来。
     'pkg/boot.js': ['static/js/require.js', 'components/jquery/jquery.js', 'components/bootstrap/js/bootstrap.js'],
-    'pkg/app.js': ['page/examples/form.js']
+    'pkg/app.js': [
+       '**/libs/**.js',
+       '**/widget/**.js'
+    ],
+    'pkg/aio.css': ['**.less','**/dialog-min.css']
 });
 
 
