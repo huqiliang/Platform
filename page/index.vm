@@ -1,7 +1,7 @@
 #extends("page/layout/front.vm")
 	#block("content")
 	<!--livereload-->
-	
+
 	<div class="content">
 		#widget("widget/InOutDate/InOutDate.vm")
 		#widget("widget/IndexNews/IndexNews.vm")

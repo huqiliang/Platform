@@ -1,0 +1,103 @@
+#set($layout = $request.getParameter('layout'))
+#if ($layout == 'left')
+	#set($anLayout = 'right')
+#elseif ($layout == 'right')
+	#set($anLayout = 'left')
+#else
+	#set($layout = 'left')
+	#set($anLayout = 'right')
+#end
+
+###extends($parent)
+#extends("page/layout/front.vm")
+    #block("content")
+    <!--livereload-->  
+
+	         <div class="banner">
+	            <img src="/static/images/banner5.jpg">
+	        </div>
+	        <div class="content">
+	            <div class="siderbar $layout">
+	                <div class="siderbar_title">关于我们</div>
+	                <ul>
+	                     <li><a href="/">集团简介</a></li>
+	                     <li><a href="/">荣誉与奖项</a></li>
+	                     <li><a href="/">品牌优势</a></li> 
+	                <ul>
+	            </div>
+	            <div class="columns $anLayout clearfix">
+	            	<div style="padding-top:30px;">
+           	 				<span style="font-family:Microsoft YaHei;"><img alt="" src="http://www.naradahotels.com/upload/CONNECT_IMAGE/GDPAGE/1410917805923.jpg">&nbsp;</span> 
+							<p>
+								<span style="font-family:Microsoft YaHei;color:#333333;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:Microsoft YaHei;color:#000000;line-height:2;">君澜酒店集团（NARADA&nbsp;HOTEL&nbsp;GROUP）是中国饭店集团10强和全球酒店集团100强。目前集团旗下主要拥有</span> 
+							</p>
+							<p>
+								<span style="font-family:Microsoft YaHei;color:#000000;">&nbsp;&nbsp;&nbsp; </span><span style="font-family:Microsoft YaHei;color:#000000;line-height:2;">“君澜度假酒店”（极具中国文化内涵的休闲度假酒店）</span> 
+							</p>
+							<p class="p0">
+								<span style="font-family:Microsoft YaHei;color:#000000;line-height:2;">“君澜大饭店”（最具中国文化特征的城市休闲商务酒店）</span> 
+							</p>
+							<p class="p0">
+								<span style="font-family:Microsoft YaHei;color:#000000;line-height:2;"> “君亭酒店”（中端精选酒店）</span> 
+							</p>
+							<p class="p0">
+								<span style="font-family:Microsoft YaHei;line-height:2;"></span><span style="font-family:Microsoft YaHei;color:#000000;">&nbsp;</span> 
+							</p>
+							<p class="p0">
+								<span style="font-family:Microsoft YaHei;color:#333333;line-height:2;"><span style="color:#000000;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:Microsoft YaHei;color:#000000;">截至2014年，君澜酒店集团管理业绩遍及浙江、海南、云南、上海、山东、江苏、湖南、湖北、江西、安徽、福建、四川和山西等13个省市及澳大利亚珀斯，投资管理超过50家酒店，客房总数逾15000间。</span></span> 
+							</p>
+							<p class="p0">
+								<br>
+							</p>
+							<p class="p0">
+								<span style="font-family:Microsoft YaHei;color:#000000;line-height:2;">&nbsp;&nbsp;&nbsp;&nbsp; 君澜酒店集团的品牌经营风格是“不以豪华材料装饰取胜，以文化内涵取胜”、“不以硬件设施自豪，以软件、优秀员工队伍自豪”、“不以常规服务自满，以差异个性服务自信”，务求为客人营造拥有如“俱乐部”、“博物馆”、“家”一般的时尚、文化、艺术、温馨氛围的舒适居住空间，为宾客提供期望的服务，为业主创造最佳的效益，为员工搭建最好的职业舞台。</span> 
+							</p>
+							<p class="p0">
+								<br>
+							</p>
+							<p class="p0">
+								<span style="font-family:Microsoft YaHei;color:#000000;line-height:2;">&nbsp;&nbsp;&nbsp;&nbsp; 经过多年的潜心经营，君澜酒店集团始终秉承“变是永恒的不变”的差异化战略，在变化的市场环境中不断寻找发展的契机，在现有的管理模式上不断追求突破与创新，在民族品牌酒店业的机遇与挑战中不断历练和成长。</span> 
+							</p>
+							<p class="p0">
+								<br>
+							</p>
+							<p class="p0">
+								<span style="font-family:Microsoft YaHei;color:#000000;line-height:2;">&nbsp;&nbsp;&nbsp;&nbsp; 与此同时，“君澜”集团品牌也得到了较好的社会评价和业内认可，曾连续五年荣膺“中国民族饭店品牌先锋”，连续六年荣膺“中国最具规模的30家本土饭店集团”，并获得“中国企业影响力十大（行业）品牌”、“中国国内十大品牌酒店集团”、“中国最佳本土酒店管理集团”、&nbsp; </span><span style="font-family:Microsoft YaHei;color:#000000;line-height:2;">“中国饭店业30年最具影响力饭店管理公司”、“最佳中国酒店管理集团”等多项殊荣。&nbsp;&nbsp;</span> 
+							</p>
+							<p class="p0">
+								<br>
+							</p>
+							<p class="p0">
+								<span style="font-family:Microsoft YaHei;color:#000000;line-height:2;">&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:Microsoft YaHei;color:#000000;line-height:2;">君澜酒店集团的战略愿景，即：建立一个体现东方文化、最具中国特色的高品质酒店集团。为此，集团将充分发挥自身多年来在品牌文化、服务理念、产品特色等方面的积累优势，坚持中国文化特点，坚持以差异化发展策略，</span> 
+							</p>
+							<p class="p0">
+								<span style="font-family:Microsoft YaHei;color:#000000;line-height:2;">&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:Microsoft YaHei;color:#000000;line-height:2;">在布局上，完成对国内重要经济集聚区的布点，形成合理的酒店经营网络；</span> 
+							</p>
+							<p class="p0">
+								<span style="font-family:Microsoft YaHei;color:#000000;line-height:2;">&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:Microsoft YaHei;color:#000000;line-height:2;">在品质上，加快成为有东方文化内涵的风格独特的酒店供应商；</span> 
+							</p>
+							<p class="p0">
+								<span style="font-family:Microsoft YaHei;color:#000000;line-height:2;">&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="font-family:Microsoft YaHei;color:#000000;line-height:2;">在规模上，成为国内最具规模的有独特中国文化内涵的本土酒店集团；</span> 
+							</p>
+							<p class="p0">
+								<span style="font-family:Microsoft YaHei;color:#000000;line-height:2;">&nbsp;&nbsp;&nbsp;&nbsp; 将“君澜”塑造成为一个最具中国文化特点的民族酒店品牌，让更多的宾客感受君澜“真正的度假”和“更多的关爱”。</span> 
+							</p>
+							<p>
+								<span style="font-family:Microsoft YaHei;color:#333333;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span> 
+							</p>
+							<p>
+								<span style="font-family:Microsoft YaHei;color:#333333;">&nbsp;</span> 
+							</p>
+        			</div>
+	            </div>
+	        </div>
+
+
+	    ## <div class="text">
+	    	
+	    ##     this is an article11
+	    ## </div>
+    #end 
+    ## 需要依赖一下自己，否则该 vm 中依赖没法自动加载进来。
+    #require("page/index.vm")
+#end

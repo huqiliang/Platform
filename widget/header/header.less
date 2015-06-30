@@ -1,31 +1,18 @@
 /*base top*/
-@import '/static/css/config.less';
-.logo{background: @other_bg;height: 100px;}
-.menu{
-	height: 44px;background:@nav_bg;color:@nav_color;
-	a{color:@nav_color;}
-	li{float: left;display: inline-block;}
-	.menul{width: 610px;float: left;height: 42px;overflow: hidden;
-		li{
-			padding-right:20px;
-			a{display: block;padding: 12px 20px;border-top: none;}
-			:hover{.border();border-top: none;}
-		}
-	}
-	.menur{float: right;padding:12px 0 0 0;
-		  li{
-		  	padding-right: 10px;
-			span{padding-left: 10px;}
+@import url('/static/css/config.less');
 
-		  }
-		  .my_down{margin-left: 5px;padding-right: 12px;width: 80px;position: relative;z-index:5;_left: 60px;
-			//.my_down_a{background:url(../images/my_down.png) no-repeat right center;padding: 13px 20px 15px 0;}
-			.my_menu_down{.border();display: none;height: 92px;width: 80px;position: absolute;top: 30px;left: -5px;z-index: 4;
-				li{float: left;width: 80px;height: 20px;background: @body_bg;padding:5px 0;border-bottom: 1px solid #ccc;margin: 0;
-					a{color:@link_color;display: block;text-align: center; }
-				}
-			}
-		  }
-	}
-
-}
+.header{height:112px; width:100%;background: #000;}
+.swf{ width:960px;clear:both; margin:0 auto;}
+.nav{margin:0 auto; }
+.nav a{color:#fff;}
+#back{ float:left; font-family:"Arial";}
+.top_nav{line-height:30px;height:30px;}
+.top_nav div a{margin:0 10px; color:#fff;}
+.top_nav div a:hover{color:#fff;}
+.menu{ height:81px; width:1000px; margin:0 auto;  position: relative;z-index: 1001;}
+.logo{ display:block; float:left; height:79px;}
+.select{ display:inline-block; width:93px; height:22px; background:url(/static/images/select.jpg) no-repeat; margin:5px 0 0 30px; line-height:22px; z-index: 99999999999; text-align:center; color:#fff; cursor:default; position:relative;}
+#ch_select{ position:absolute; width:91px; line-height:22px; top:22px; left:1px; z-index:11; background:#202020; border-radius:0 0 5px 5px; display:none; padding-bottom:5px;}
+#ch_select li a{ display:block; margin:0; color:#fff;}
+#ch_select li a:hover{ background:#999;}
+.daohang{ float:left; display:block; margin-top:23px;}

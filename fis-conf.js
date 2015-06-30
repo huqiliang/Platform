@@ -60,7 +60,8 @@ fis.config.set('pack', {
        '**/libs/**.js',
        '**/widget/**.js'
     ],
-    'pkg/aio.css': ['**.less','**/dialog-min.css']
+  
+    'pkg/aio.css': ['**.less','**.css']
 });
 
 
@@ -70,7 +71,10 @@ fis.config.set('roadmap.path', [
             reg: /^\/components\/.*\.(?:less|md)$/i,
             release: false
         },
-
+        {
+            reg: '/^\/static\/css\/skin\/(.*)$/i',
+            release: false
+        },
         {
             reg: 'doc/**.md',
             release: false

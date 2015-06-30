@@ -2,6 +2,7 @@
     "title": "页面",
     "titleAffix": "页面副标题",
     "pageTitle": "页面标题",
+    "skin":"default",
     "member":{
         "lastName":"李",
         "sex":"男"

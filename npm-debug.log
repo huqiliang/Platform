@@ -1,0 +1,69 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'jello-command-release' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 silly cache add args [ 'jello-command-release', null ]
+6 verbose cache add spec jello-command-release
+7 silly cache add parsed spec { raw: 'jello-command-release',
+7 silly cache add   scope: null,
+7 silly cache add   name: 'jello-command-release',
+7 silly cache add   rawSpec: '',
+7 silly cache add   spec: '*',
+7 silly cache add   type: 'range' }
+8 verbose addNamed jello-command-release@*
+9 silly addNamed semver.valid null
+10 silly addNamed semver.validRange *
+11 silly addNameRange { name: 'jello-command-release', range: '*', hasData: false }
+12 silly mapToRegistry name jello-command-release
+13 silly mapToRegistry using default registry
+14 silly mapToRegistry registry http://registry.cnpmjs.org/
+15 silly mapToRegistry uri http://registry.cnpmjs.org/jello-command-release
+16 verbose addNameRange registry:http://registry.cnpmjs.org/jello-command-release not in flight; fetching
+17 verbose request uri http://registry.cnpmjs.org/jello-command-release
+18 verbose request no auth needed
+19 info attempt registry request try #1 at 09:41:46
+20 verbose request id 2dc59c6dfaf05d1c
+21 http request GET http://registry.cnpmjs.org/jello-command-release
+22 http 404 http://registry.cnpmjs.org/jello-command-release
+23 verbose headers { server: 'nginx/1.4.6 (Ubuntu)',
+23 verbose headers   date: 'Thu, 25 Jun 2015 01:40:25 GMT',
+23 verbose headers   'content-type': 'application/json; charset=utf-8',
+23 verbose headers   'transfer-encoding': 'chunked',
+23 verbose headers   connection: 'keep-alive',
+23 verbose headers   'x-readtime': '12',
+23 verbose headers   'content-encoding': 'gzip' }
+24 silly get cb [ 404,
+24 silly get   { server: 'nginx/1.4.6 (Ubuntu)',
+24 silly get     date: 'Thu, 25 Jun 2015 01:40:25 GMT',
+24 silly get     'content-type': 'application/json; charset=utf-8',
+24 silly get     'transfer-encoding': 'chunked',
+24 silly get     connection: 'keep-alive',
+24 silly get     'x-readtime': '12',
+24 silly get     'content-encoding': 'gzip' } ]
+25 verbose stack Error: 404 Not Found: jello-command-release
+25 verbose stack     at CachingRegistryClient.<anonymous> (C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:245:14)
+25 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\npm-registry-client\lib\request.js:176:7
+25 verbose stack     at Gunzip.onEnd (zlib.js:227:5)
+25 verbose stack     at Gunzip.emit (events.js:129:20)
+25 verbose stack     at _stream_readable.js:908:16
+25 verbose stack     at process._tickCallback (node.js:355:11)
+26 verbose statusCode 404
+27 verbose pkgid jello-command-release
+28 verbose cwd F:\nspace\Platform
+29 error Windows_NT 6.1.7601
+30 error argv "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "jello-command-release"
+31 error node v0.12.2
+32 error npm  v2.7.4
+33 error code E404
+34 error 404 Not Found: jello-command-release
+34 error 404
+34 error 404 'jello-command-release' is not in the npm registry.
+34 error 404 You should bug the author to publish it (or use the name yourself!)
+34 error 404
+34 error 404 Note that you can also install from a
+34 error 404 tarball, folder, http url, or git url.
+35 verbose exit [ 1, true ]

@@ -2,8 +2,9 @@
   #html("static/js/require.js")
   #head()
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    #require("static/css/base.less")
-    <title>$title #if( $titleAffix ) - $titleAffix#end</title>
+    #require("static/css/normalize.css")
+    #require("static/css/skin/default/${skin}.less")
+    <title>$title  #if( $titleAffix ) - $titleAffix#end</title>
   #end 
  
   #body()
@@ -12,6 +13,7 @@
       #block("body")
           This is body.
       #end
+     
     </div>
   #end
    ## 需要依赖一下自己，否则该 vm 中依赖没法自动加载进来。

@@ -1,0 +1,44 @@
+<div class="city_tab">
+		<a href="javascript:;" class="active">热门</a>
+		<c:forEach items="${groups }" var="group">
+		<a href="javascript:;">${group }</a>
+		</c:forEach>
+	</div>
+	<div class="citys">
+		<ul class="clearfix">
+			<li><a href="javascript:;" data-city="hot">热门</a></li>
+				<c:forEach items="${allHotCityCodesMap }" var="city">
+				<li><a href="javascript:;" data-city="${city.key }">${city.value }</a></li>	
+				</c:forEach>
+	    </ul>
+	    <c:forEach items="${cityGroupList }" var="cityMap">
+	        <ul class="clearfix">
+	    		<c:forEach items="${cityMap }" var="city">
+	            	<li><a href="javascript:;" data-city="${city.key }">${city.value }</a></li>
+	            </c:forEach>
+	        </ul>
+	    </c:forEach>
+	    	
+	</div>
+	<div class="hotels">
+		<ul>
+			<c:forEach items="${allGroupHotelList }" var="hotel">
+				<li><a href="/hotel.htm?hotelId=${hotel.hotelId }"  data-city="${hotel.city }" <c:if test="${hotel.isHot eq 'T'}">city="hot"</c:if>>${hotel.name}</a></li>
+			</c:forEach>
+		</ul>
+	</div>
+	<div class="c"></div>
+	<a href="javascript:;" id="ad_more" style="padding:5px 25px 5px 25px;display:block;">more>></a>
+	<div id="ad_more_info" style="margin:0 25px 5px 25px;line-height: 22px;padding:8px 0;display:none;border-top: 1px solid #767676;">
+	    <ul>
+	    	<!-- <li style="width:170px;float:left;"><a style="color:#727272" data-city="hz">富阳国际贸易中心大酒店</a></li> -->
+	        <li style="width:170px;float:left;"><a href="/hotel.htm?hotelId=25" data-city="wz">温州华侨饭店</a></li>
+	        <li style="width:170px;float:left;"><a href="/hotel.htm?hotelId=26" data-city="yx">宜兴宾馆</a></li>
+	        <li style="width:170px;float:left;"><a href="/hotel.htm?hotelId=22" data-city="yc">江苏欧堡利亚大酒店</a></li>
+	        <li style="width:170px;float:left;"><a href="/hotel.htm?hotelId=23" data-city="hz">千岛湖梅地亚君澜度假酒店</a></li>
+	        <li style="width:170px;float:left;"><a style="color:#727272">......</a></li>
+	    </ul>
+	    <div class="c"></div>
+	    <p>君亭品牌十多家精品酒店有待接入集团官网</p>
+	</div>
+		

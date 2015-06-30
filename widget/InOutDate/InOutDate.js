@@ -1,10 +1,9 @@
 var $ = require('jquery');
-var addDate=require("libs/utils/utils.adddate")
-var today=require("libs/utils/utils.today")
+var day=require("libs/utils/day")
 require('laydate')                //日历插件
 
-var fday = today();
-var eday = addDate(fday,1);
+var fday = day.today();
+var eday = day.addDate(fday,1);
 
 $("#CheckInDate").val(fday);
 
@@ -18,7 +17,7 @@ laydate({
     min: fday, //最小日期
     festival: true, //显示节日
     choose: function(datas){ //选择日期完毕的回调
-      var edate=addDate(datas,1)
+      var edate=day.addDate(datas,1)
       $("#CheckOutDate").val(edate);
       laydate({
 	    elem: '#CheckOutDate',

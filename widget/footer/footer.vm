@@ -1,3 +1,12 @@
-<!--footer开始-->
-<div class="Reserved">四川九点连锁版权所有&nbsp;&nbsp;&nbsp;蜀ICP备14024682号&nbsp;&nbsp;&nbsp;<a href="http://www.ipms.cn">杭州绿云科技有限公司技术支持</a>&nbsp;&nbsp;&nbsp;全国客服中心&nbsp;&nbsp;&nbsp;400-6909-009</div>
-<!--footer结束-->
+<div class="footer">
+	<div class="content">
+		<div class="foot">
+			<div class="min_logo"><a href="/listBrandHotel.htm?secondCategory=NARADA_ResortsSpa&brandCode=DUJIA" class="img_001" title="君澜度假酒店"></a><a href="/listBrandHotel.htm?secondCategory=Narada_Hotels_Resorts&brandCode=FANDIAN" class="img_002" title="君澜大饭店"></a><a href="http://www.ssawhotels.com/index.html" class="img_003" title="君亭酒店"></a></div>
+			<div class="min_nav">&copy; 2014<a href="/getGdPage2.htm?secondCategory=GROUP_INFO">君澜酒店集团</a><a href="/getGdPage2.htm?secondCategory=narada_brand">品牌与酒店</a>|<!-- a href="">预订中心</a>|--><a href="/getYOUHUIList.htm?secondCategory=HOTEL_NEWS&pageSize=4">媒体中心</a>|<a href="/getGdPage2.htm?secondCategory=GROUP_INFO">关于我们</a>关注我们：<a id="sina" target="_blank" href="http://weibo.com/naradahotelgroup"><img src="/static/images/sina.jpg" /></a><a  id="weixin" href="javascript:;"><img src="/static/images/weixin.jpg" /></a><img src="/static/images/erweima.png" class="erweima toumin"  style="display:none;"/></div>
+			
+		</div>
+	</div>
+</div>  
+#script()
+ require(['./footer'])
+#end

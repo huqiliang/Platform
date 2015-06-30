@@ -9,13 +9,13 @@
   </ul>
 #end
 <div class="newsM clearfix">
-      <div class="newsMtitile"><a href="http://www.ruilizx.com/ruilixinwen/18871.html" target="_blank">绿云科技</a></div>
-      	 <h1><a href="http://www.ruilizx.com/ruilixinwen/18871.html" target="_blank"><img src="http://www.ruilizx.com/uploads/150608/1025-15060Q43136158.jpg" width="138" height="83"></a></h1>
+      <div class="newsMtitile"><a href="" target="_blank">绿云科技</a></div>
+      	 <h1><a href="" target="_blank"><img src="http://www.ruilizx.com/uploads/150608/1025-15060Q43136158.jpg" width="138" height="83"></a></h1>
      	 <dl class="clearFix">
-         	<p>绿云科技详情绿云科技详情绿云科技详情绿云科技详情绿云科技详情绿云科技详情...<a href="http://www.ruilizx.com/ruilixinwen/18871.html" target="_blank">【详情点击】</a></p>
+         	<p>绿云科技详情绿云科技详情绿云科技详情绿云科技详情绿云科技详情绿云科技详情...<a href="" target="_blank">【详情点击】</a></p>
          </dl>
 
-      <ul>
+      <ul class="clearfix">
       		 #renderMenus($news)
       </ul>
 </div>

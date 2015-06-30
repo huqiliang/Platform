@@ -5,7 +5,7 @@ config.less v1.0.0 | (c) 2015, 2015 lvyun Foundation, Inc. | huqiliang
 
 *****less 配置文件*****
 */
-@width:1100px;		  	//网页可视区域宽度
+@width:1000px;		  	//网页可视区域宽度
 @body_bg:#fff;     		//body背景颜色
 @link_color:#333;  		//链接颜色
 @font_color:#272727;  	//字体颜色
@@ -20,11 +20,13 @@ config.less v1.0.0 | (c) 2015, 2015 lvyun Foundation, Inc. | huqiliang
 //其他按组件
 
 //导航组件
-@nav_bg:#fff;	  	//导航条背景色
+@nav_bg:#000;	  	//导航条背景色
 @nav_color:#999;	  	//导航条字体颜色
 
 //less minxin
-
+.clearfix { zoom:1;
+	:after {content: "."; display: block; clear: both; visibility: hidden; line-height: 0; height: 0;font-size:0; } 
+} 
 //边框
 .border(@type:solid){					
 	border: 1px @type @border_color;
@@ -37,3 +39,28 @@ config.less v1.0.0 | (c) 2015, 2015 lvyun Foundation, Inc. | huqiliang
 		background: @btn_hv_bg;color: @btn_hv_color;
 	}
 }
+/** 基本骨架控制 **/
+.content{width:@width;margin:0 auto; }
+
+.left{float:left;}
+.right{float:right; }
+.siderbar{width: 204px;position: relative;margin-bottom: 40px;}
+.columns{width: 762px;}
+.siderbar ul {
+	 border-bottom: 3px solid #000;
+	li{
+	  border-bottom: 1px solid #d1d1d1;
+	  a {
+		  border-top: 1px solid #ccc;
+		  display: block;
+		  background: #e6e6e6;
+		  height: 33px;
+		  line-height: 33px;
+		  padding-left: 15px;
+		  color: #3e3e3e;
+		  :hover{background:#efefef; color:#a09067;}
+		}
+	}
+}
+.siderbar_title {background: #000;color:#fff;width: 204px;height: 40px;line-height: 40px;position: absolute;top: -40px;padding-left: 15px;color: #fff;font-weight: bold;}
+.banner{  height: 200px;overflow: hidden;width: 100%;position: relative;}

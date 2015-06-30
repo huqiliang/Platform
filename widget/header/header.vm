@@ -7,31 +7,63 @@
     #end
   </ul>
 #end
-<div id="top">
-    <div class="logo"><div class="content"><img src="/static/images/top.jpg" alt="" /></div></div>
-    <div class="menu">
-        <div class="content">
-            #renderMenus($menus)
-            <ul class="menur clearfix">
-                <li><a class="login">登录</a></li>
-                <li><a class="regedit">注册</a></li>
-                #if(!$member)
-                  <li><a class="login">登录</a><span>|</span></li>
-                  <li><a class="regedit">注册</a></li>
-                #else
-                  <li>欢迎您&nbsp; ${member.lastName}</li><li>#if(${member.sex}=="男") 先生 #else 女士#end</li>
-                  <li><a href="/logOut.htm">注销</a></li>
-                  <li class="my_down"><a href="/member/profile.htm" class="my_down_a">我的九点</a>
-                      <ul class="my_menu_down">
-                          <li><a href="/member/profile.htm">个人中心</a></li>
-                          <li><a href="/member/profile.htm?=d1">我的订单</a></li>
-                          <li><a href="/member/profile.htm?=d2">账户管理</a></li>
-                      </ul>
-                  </li>
-                #end
-            </ul>
+## <div id="top">
+##     <div class="logo"><div class="content"><img src="/static/static/images/top.jpg" alt="" /></div></div>
+##     <div class="menu">
+##         <div class="content">
+##             #renderMenus($menus)
+##             <ul class="menur clearfix">
+##                 <li><a class="login">登录</a></li>
+##                 <li><a class="regedit">注册</a></li>
+##                 #if(!$member)
+##                   <li><a class="login">登录</a><span>|</span></li>
+##                   <li><a class="regedit">注册</a></li>
+##                 #else
+##                   <li>欢迎您&nbsp; ${member.lastName}</li><li>#if(${member.sex}=="男") 先生 #else 女士#end</li>
+##                   <li><a href="/logOut.htm">注销</a></li>
+##                   <li class="my_down"><a href="/member/profile.htm" class="my_down_a">我的九点</a>
+##                       <ul class="my_menu_down">
+##                           <li><a href="/member/profile.htm">个人中心</a></li>
+##                           <li><a href="/member/profile.htm?=d1">我的订单</a></li>
+##                           <li><a href="/member/profile.htm?=d2">账户管理</a></li>
+##                       </ul>
+##                   </li>
+##                 #end
+##             </ul>
+##         </div>
+##     </div>
+## </div>
+<div class="header">
+        <div class="top_nav">
+                <div class="content">
+                  <div style="float:right;" id="dr_alert">
+                     <a href="/book/book_search.htm">修改/取消预订</a><a href="/login.htm" class="language">登录</a>|<a href="/register.htm" class="register">注册</a>|<a href="/company/login.htm" class="register">协议单位订房</a>
+                     <span style="margin-left:20px;">客服中心：4000071616</span>
+                    <span class="select"><em>语言</em><ul id="ch_select"><li><a href="javascript:;">中文</a></li><li><a href="javascript:;">English</a></li></ul></span>
+                  </div>
+              </div>
         </div>
-    </div>
+        <div class="menu">
+              <a href="/index.htm" class="logo"><img src="/static/images/logo.png" /></a>
+                  <div style="float:right;width:430px; position:relative; z-index:1">
+                    <a href="/" style="position: absolute;top: 23px;left: -97px;">
+                  <img src="/static/images/shou.png">
+              </a>
+              <img src="/static/images/daohang.jpg" usemap="#Map" class="daohang" />
+                       <!-- <a href="javascript:;" class="book_img" id="book_show" >
+                        <img src="/static/images/closeddd.png" id="closedd" style="position:absolute;right:2px;top:2px;display:none;" />
+                       </a>-->
+                      <div class="show_hotels">
+                         
+                      </div>
+            </div>
+            <map name="Map" id="Map">
+              <area shape="rect" coords="2,2,103,34" href="javascript:;"  id="show_mudidi">
+              <area shape="rect" coords="102,2,194,32" href="/lanjiahui.htm?secondCategory=LANJIAHUI"  />
+              <area shape="rect" coords="194,3,297,32" href="/package/packageSearch.htm?pageSize=10"  />
+              <area shape="rect" coords="295,2,394,34" href="/naradaSeason.htm?secondCategory=LUXURY"  />
+            </map>
+        </div>
 </div>
 #script()
   require(['./header'])

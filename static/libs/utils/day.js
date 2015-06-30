@@ -14,11 +14,20 @@ Date.prototype.Format = function (fmt) { //author: meizz
     if (new RegExp("(" + k + ")").test(fmt)) fmt = fmt.replace(RegExp.$1, (RegExp.$1.length == 1) ? (o[k]) : (("00" + o[k]).substr(("" + o[k]).length)));
     return fmt;
 }
-//日期累加累减
-var addDate = module.exports = function(date,days){ 
+
+function day(){}
+
+day.prototype.today= function(){ 
+    var d = new Date();
+    var m=d.getMonth()+1;
+    return d.getFullYear()+'-'+(m<10?("0"+m):m)+'-'+(d.getDate()<10?"0"+d.getDate():d.getDate());    
+};
+day.prototype.addDate= function(date,days){ 
     var d=new Date(date.replace(/-/g,"/"));
     d.Format(date);
     d.setDate(d.getDate()+days); 
     var m=d.getMonth()+1;
     return d.getFullYear()+'-'+(m<10?("0"+m):m)+'-'+(d.getDate()<10?"0"+d.getDate():d.getDate()); 
 };
+//实例化
+var day = module.exports =new day()
